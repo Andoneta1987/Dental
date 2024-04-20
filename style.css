@@ -1,0 +1,209 @@
+
+:root{
+    --black:var(--black);
+}
+
+/*header*/
+header {
+    display:flex;
+    justify-content:space-around;
+    background-color:rgb(125, 192, 206);
+}
+
+/*header a*/
+header a{
+    text-align: center;
+    text-decoration: none;
+    padding: 50px;
+}
+/*header logo*/
+#logo{
+    border-radius:50%;
+    padding-left: 0px;
+    height: 100px;
+    margin-top: 10px;
+}
+/*main*/
+#main{
+    text-align: center;
+    padding: 25px 10px;
+    background-image: url(images/benyamin-bohlouli-vVKh9xeLub4-unsplash.jpg);
+    background-size: cover;
+    height:500px;
+}
+
+/*article*/
+.services{
+    color: black;
+    padding: 20px;
+    text-transform: uppercase;
+}
+/*article h1*/
+.services h1{
+    color:black;
+    text-align: center;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+/*Article box*/
+.box{
+    display:flex;
+    justify-content: space-between;
+    color:var(--black);
+}
+/*article/box-face*/
+.box-1{
+    background-image: url(images/lafayett-zapata-montero-loBRFqXm1QA-unsplash.jpg);
+    justify-content: space-between;
+    color: var(--black);
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+    border-radius: 5px;
+    border: 2px solid rgb(218, 214, 214);
+    padding: 0px;
+    margin: 0px;
+}
+/*article/box(h1)*/
+.box h1{
+    padding-top: 10px;
+    text-align: center;
+    color: var(--black);
+}
+/*article/Box-body*/
+.box-2{
+    background:url(images/quang-tri-nguyen-VxVO1zrY5F8-unsplash.jpg);
+    justify-content: space-between;
+    color:var(--black);
+    background-size: cover;
+    width:400px;
+    height:300px;
+    border-radius: 5px;
+    border: 2px solid rgb(218, 214, 214);
+    padding: opx;
+    margin: 0px;
+}
+/*article/Box-E*/
+.box-3{
+    background:url(images/peter-kasprzyk-U1gvhqVQ2kQ-unsplash.jpg);
+    justify-content: space-between;
+    color:var(--black);
+    background-size: cover;
+    width:400px;
+    height:300px;
+    border-radius: 5px;
+    border: 2px solid rgb(218, 214, 214);
+    padding: opx;
+    margin: 0px;   
+}
+/*article input/Book*/
+#Book{
+    text-align: center;
+    padding-top: 30px;
+}
+#text{
+    text-align: center;
+    border-radius: 1px solid green;
+    background-color: var(--black);
+    color: #fff;
+}
+
+/*section subscribe h2*/
+#subscribe h2{
+    text-align: center;
+    padding-top: 15px;
+    text-transform: uppercase;
+}
+/*secton subscribe*/
+.subscribe{
+    display: block;
+}
+/*section/Card-1 & Card-2*/
+#Card-1,#Card-2{
+background-color: aquamarine;
+color: var(--black);
+width: 600px;
+height: 200px;
+border-radius: 30px;
+}
+/*section Card*/
+.card{
+    display: flex;
+    padding-bottom: 0px; 
+}
+/*section/card(p)*/
+.card p{
+    text-align: center;
+}
+/*section form*/
+form{
+    background-color: rgb(216, 208, 198);
+    text-align: center;
+    padding: 30px;
+}
+/*section/form"Whatsapp"*/
+#Whatsapp{
+    text-align: center;
+    color: #fff;
+    border: 1px solid var(--black);
+    background-color: var(--black);
+}
+/*section/form(h1)*/
+form h1::before{
+    content: "20% off " ;
+    color: red;
+}
+/*section/WE*/
+.We{
+    display: flex;
+    justify-content: space-between;
+}
+/*section/footer*/
+.footer{
+    background-color: black;
+    color: #fff;
+    padding: 50px 30px;
+}
+/*section/footer span*/
+#About p{
+    color: #fff;
+}
+.WE span{
+    color: #fff;
+}
+/*section/copyright*/
+#copyright{
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+    margin-top: 0px;
+}
+/*responsive*/
+@media only screen and (max-width:600px){
+    #web{
+        width: 600px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "article"
+        "footer";
+    }
+    header{
+        grid-area: header;
+        background-color: aquamarine;
+    }
+    main{
+        grid-area: main;
+        background-image: url();
+    }
+    article{
+        grid-area: article;
+        background-color: rgb(149, 175, 197);
+    }
+    footer{
+        grid-area: footer;
+        background-color: aquamarine;
+    }
+}
