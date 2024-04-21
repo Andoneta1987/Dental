@@ -2,7 +2,10 @@
 :root{
     --black:var(--black);
 }
-
+#web{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem,1 fr)); 
+}
 /*header*/
 header {
     display:flex;
@@ -96,24 +99,6 @@ header a{
     border: 2px solid rgb(218, 214, 214);
     padding: opx;
     margin: 0px;   
-}
-/*article input/Book*/
-#Book{
-    text-align: center;
-    padding-top: 30px;
-}
-#text{
-    text-align: center;
-    border-radius: 1px solid green;
-    background-color: var(--black);
-    color: #fff;
-}
-
-/*section subscribe h2*/
-#subscribe h2{
-    text-align: center;
-    padding-top: 15px;
-    text-transform: uppercase;
 }
 
 /*section/We*/
