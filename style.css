@@ -47,11 +47,12 @@ header a{
 }
 /*Article box*/
 .box{
-    display:flex;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem,1 fr));    
     justify-content: space-between;
     color:var(--black);
 }
-/*article/box-face*/
+/*article/box-1*/
 .box-1{
     background-image: url(images/lafayett-zapata-montero-loBRFqXm1QA-unsplash.jpg);
     justify-content: space-between;
@@ -70,7 +71,7 @@ header a{
     text-align: center;
     color: var(--black);
 }
-/*article/Box-body*/
+/*article/box-2*/
 .box-2{
     background:url(images/quang-tri-nguyen-VxVO1zrY5F8-unsplash.jpg);
     justify-content: space-between;
@@ -83,7 +84,7 @@ header a{
     padding: opx;
     margin: 0px;
 }
-/*article/Box-E*/
+/*article/box-3*/
 .box-3{
     background:url(images/peter-kasprzyk-U1gvhqVQ2kQ-unsplash.jpg);
     justify-content: space-between;
@@ -114,46 +115,8 @@ header a{
     padding-top: 15px;
     text-transform: uppercase;
 }
-/*secton subscribe*/
-.subscribe{
-    display: block;
-}
-/*section/Card-1 & Card-2*/
-#Card-1,#Card-2{
-background-color: aquamarine;
-color: var(--black);
-width: 600px;
-height: 200px;
-border-radius: 30px;
-}
-/*section Card*/
-.card{
-    display: flex;
-    padding-bottom: 0px; 
-}
-/*section/card(p)*/
-.card p{
-    text-align: center;
-}
-/*section form*/
-form{
-    background-color: rgb(216, 208, 198);
-    text-align: center;
-    padding: 30px;
-}
-/*section/form"Whatsapp"*/
-#Whatsapp{
-    text-align: center;
-    color: #fff;
-    border: 1px solid var(--black);
-    background-color: var(--black);
-}
-/*section/form(h1)*/
-form h1::before{
-    content: "20% off " ;
-    color: red;
-}
-/*section/WE*/
+
+/*section/We*/
 .We{
     display: flex;
     justify-content: space-between;
@@ -168,7 +131,7 @@ form h1::before{
 #About p{
     color: #fff;
 }
-.WE span{
+.We span{
     color: #fff;
 }
 /*section/copyright*/
@@ -178,32 +141,4 @@ form h1::before{
     padding-top: 50px;
     margin-top: 0px;
 }
-/*responsive*/
-@media only screen and (max-width:600px){
-    #web{
-        width: 600px;
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-        grid-template-areas: 
-        "header"
-        "main"
-        "article"
-        "footer";
-    }
-    header{
-        grid-area: header;
-        background-color: rgb(125, 192, 206);
-    }
-    main{
-        grid-area: main;
-        background-image: url();
-    }
-    article{
-        grid-area: article;
-        background-color: rgb(149, 175, 197);
-    }
-    footer{
-        grid-area: footer;
-        background-color: aquamarine;
-    }
 }
