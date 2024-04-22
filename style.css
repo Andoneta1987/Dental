@@ -5,7 +5,6 @@
 /*web*/
 #web{
     min-width: 500px;
-    max-width:1120px;
 }
 /*header*/
 header {
@@ -52,7 +51,7 @@ header a{
 /*Article box*/
 .box{
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(19rem,1 fr));    
+    grid-template-columns: 1 fr;    
     justify-content: space-between;
     color:var(--black);
 }
